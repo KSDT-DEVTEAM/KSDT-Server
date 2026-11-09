@@ -1,0 +1,11 @@
+FROM ubuntu:24.04
+FROM node:22-alpine
+WORKDIR /app
+
+COPY . . 
+
+# WHAT PORT ARE WE WORKING WITH? SHOULD BE "EXPOSE ____"
+EXPOSE 
+
+# WHAT DIRECTORY IS OUR APP IN? 
+CMD [ "node", "___" ]

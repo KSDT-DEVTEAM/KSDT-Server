@@ -1,0 +1,17 @@
+services:
+  hello:
+    build: .
+  caddy:
+    #FILL THIS OUT. PORTS ARE "8080:8080"
+    image: 
+    restart: 
+    ports:
+      - "8080:8080"
+    volumes:
+      - #ACCESS CADDYFILE FROM ROOT, AND SEND IT TO /etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+  
+volumes: 
+  caddy_data:
+  caddy_config:
